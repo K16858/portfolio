@@ -1,0 +1,173 @@
+/* ベーススタイル */
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  margin: 2em; 
+  background: linear-gradient(135deg, #55698e 0%, #2a5298 100%); 
+  color: #333; 
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1 { 
+  color: #1d1d1d; 
+}
+
+h2 {
+  color: #1d1d1d;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5em;
+}
+
+/* セクションスタイル */
+.section { 
+  margin-bottom: 2em; 
+}
+
+/* 自己紹介セクション */
+.about {
+  background: rgba(33, 143, 156, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 218, 220, 0.2);
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-container {
+  background: white;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8em;
+  margin-top: 2em;
+} 
+
+.detail-card {
+  background: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 8px;
+  border-left: 4px solid #103249;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  border-bottom: 2px solid #e3e3e3;
+  padding-bottom: 0.5em;
+}
+
+.detail-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-card li {
+  padding: 0.3em 0;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.detail-card li:before {
+  content: "▸";
+  color: #3498db;
+  position: absolute;
+  left: 0;
+}
+
+.skills ul {
+  display: grid;
+  gap: 0.5em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.products li {
+  margin-bottom: 1em;
+  padding: 1em;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.research li {
+  margin-bottom: 1em;
+  padding: 1em;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* リンクスタイル */
+.links a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  body { 
+    margin: 1em; 
+    font-size: 14px; 
+  }
+  
+  h1 { 
+    font-size: 1.5em; 
+  }
+  
+  .about {
+    padding: 1em;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-container {
+    padding: 1.5em;
+  }
+}
