@@ -208,12 +208,36 @@ h2 {
 }
 
 /* 研究セクション */
+.research {
+  background: rgba(33, 143, 156, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 218, 220, 0.2);
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  margin-bottom: 2em;
+}
+
+.research h2 {
+  color: #f1faee;
+  margin-bottom: 1em;
+}
+
+.research ul {
+  background: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  list-style: none;
+}
+
 .research li {
   margin-bottom: 1em;
   padding: 1em;
-  background: white;
-  border-radius: 4px;
+  background: #f8f9fa;
+  border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-left: 4px solid #103249;
 }
 
 /* リンクスタイル */
